@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
@@ -63,6 +63,9 @@ body {
     width: 247px;
     height: 66px;
     }
+    &__button_scroll {
+    scroll-behavior: smooth;
+    }
   }
   .header__button:hover {
     background-color: #fff;
@@ -78,12 +81,12 @@ body {
     left: 0;
     height: 90px;
     margin-top: 156px;
-    padding-left: 58px;
+    padding-left: 19px;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-image: url(./imgs/Star__navbar.svg), url(./imgs/Star__navbar.svg), url(./imgs/Star__navbar.svg);
-    background-position: 268px 27px, 679px 27px, 1126px 27px;
+    background-position: 272px 27px, 660px 27px, 1100px 27px;
     background-repeat: no-repeat;
     gap: 128px;
     &__item {
@@ -107,7 +110,7 @@ body {
 
   .about {
     position: absolute;
-    padding-left: 119px;
+    padding-left: 162px;
     padding-top: 94px;
     left: 0;
     width: 100%;
@@ -116,11 +119,20 @@ body {
     background-repeat: no-repeat;
     color: white;
     top: 800px;
+    background-image: url(./imgs/Star__big_second.svg), url(./imgs/Star__little_second.svg), url(./imgs/Star__medium_second.svg);
+    background-position: 1098px 88px, 25px 770px, 40px 822px;
+    background-repeat: no-repeat;
     &__header {
-      padding-bottom: 24px;
+    padding-bottom: 24px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
     }
     &__text {
-      padding-bottom: 72px;
+    padding-bottom: 72px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
     }
   }
 
@@ -128,6 +140,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 4fr);
     justify-content: start;
+    justify-items: center;
     &__img {
     width: 378px;
     }
