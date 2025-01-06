@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: montserrat;
+  width: 100%;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.heading {
+  position: absolute;
+  background: rgb(225, 255, 143);
+  background-image: url(./imgs/Header_star.svg), url(./imgs/Header__star_medium.svg), url(./imgs/Header__star_little.svg), url(./imgs/Star__little_right.svg), url(./imgs/Star__medium_right.svg);
+  background-position: 928px -333px, 63px 94px, 156px 69px, 948px 538px, 1013px 588px;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100%;
+  background-size: auto;
+  left: 0;
+  top: 0;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header {
+  margin-bottom: 50px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  margin-top: 196px;
+  margin-bottom: 24px;
+}
+.header__text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 48px;
+}
+.header__text_bold {
+  font-weight: bold;
+}
+.header__button {
+  font-family: inherit;
+  border-radius: 60px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  width: 247px;
+  height: 66px;
+}
+.header__button_scroll {
+  scroll-behavior: smooth;
+}
+
+.header__button:hover {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+
+.navbar {
+  position: absolute;
+  background-color: rgb(188, 236, 48);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  width: 100%;
+  left: 0;
+  height: 90px;
+  margin-top: 156px;
+  padding-left: 19px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url(./imgs/Star__navbar.svg), url(./imgs/Star__navbar.svg), url(./imgs/Star__navbar.svg);
+  background-position: 272px 27px, 660px 27px, 1100px 27px;
+  background-repeat: no-repeat;
+  gap: 128px;
+}
+.navbar__item {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.navbar__item_gap {
+  position: relative;
+  right: -5px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+}
+
+.about {
+  position: absolute;
+  padding-left: 162px;
+  padding-top: 94px;
+  left: 0;
+  width: 100%;
+  height: 1470px;
+  background: rgb(32, 32, 39);
+  background-repeat: no-repeat;
+  color: white;
+  top: 800px;
+  background-image: url(./imgs/Star__big_second.svg), url(./imgs/Star__little_second.svg), url(./imgs/Star__medium_second.svg);
+  background-position: 1098px 88px, 25px 770px, 40px 822px;
+  background-repeat: no-repeat;
+}
+.about__header {
+  padding-bottom: 24px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+}
+.about__text {
+  padding-bottom: 72px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+  justify-content: start;
+  justify-items: center;
+}
+.games__img {
+  width: 378px;
+}
+.games__link {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #fff;
+  color: black;
+  background-size: 90%;
+  border-radius: 30px;
+  background-repeat: repeat-x;
+  height: 473px;
+  gap: 28px;
+  width: 378px;
+}
+.articles__height_second {
+  height: 512px;
+  margin-left: -58px;
+}
+.articles__height_third {
+  margin-left: -118px;
+}
+.articles__height_fourth {
+  height: 551px;
+}
+.articles__height_fifth {
+  height: 512px;
+  margin-top: 39px;
+  margin-left: -58px;
+}
+.articles__height_sixth {
+  height: 551px;
+  margin-left: -118px;
+}
+.articles__number {
+  width: 107px;
+  height: 36px;
+  border-radius: 52px;
+  background: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32px;
+}
+.articles__name {
+  margin-left: 32px;
+}/*# sourceMappingURL=Style.css.map */
