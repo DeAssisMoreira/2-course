@@ -109,8 +109,9 @@ body {
   }
 
   .about {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
     position: absolute;
-    padding-left: 162px;
     padding-top: 94px;
     left: 0;
     width: 100%;
@@ -128,6 +129,9 @@ body {
     font-weight: 700;
     line-height: 78px;
     }
+    &__header_mobile {
+    display: none;
+    }
     &__text {
     padding-bottom: 72px;
     font-size: 24px;
@@ -141,6 +145,7 @@ body {
     grid-template-columns: repeat(3, 4fr);
     justify-content: start;
     justify-items: center;
+    grid-column-gap: 32px;
     &__img {
     width: 378px;
     }
@@ -168,10 +173,6 @@ body {
     width: 378px;
     &__height_second {
     height: 512px;
-    margin-left: -58px;
-    }
-    &__height_third {
-      margin-left: -118px;
     }
     &__height_fourth {
       height: 551px;
@@ -179,11 +180,9 @@ body {
     &__height_fifth {
       height: 512px;
       margin-top: 39px;
-      margin-left: -58px;
     }
     &__height_sixth {
       height: 551px;
-      margin-left: -118px;
     }
     &__number {
     width: 107px;
@@ -198,4 +197,18 @@ body {
     &__name {
       margin-left: 32px;
     }
+    &__desc {
+      display: none;
+    }
+    &__button {
+      display: none
+    }
   }
+  .articles:hover {
+    transform: scale(1.15);
+    transition: transform 0.8s;
+  }
+  .footer {
+  display: none
+}
+  @import 'mobile';

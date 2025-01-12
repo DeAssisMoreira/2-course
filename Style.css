@@ -109,8 +109,9 @@ body {
 }
 
 .about {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
   position: absolute;
-  padding-left: 162px;
   padding-top: 94px;
   left: 0;
   width: 100%;
@@ -129,6 +130,9 @@ body {
   font-weight: 700;
   line-height: 78px;
 }
+.about__header_mobile {
+  display: none;
+}
 .about__text {
   padding-bottom: 72px;
   font-size: 24px;
@@ -141,6 +145,7 @@ body {
   grid-template-columns: repeat(3, 4fr);
   justify-content: start;
   justify-items: center;
+  grid-column-gap: 32px;
 }
 .games__img {
   width: 378px;
@@ -169,10 +174,6 @@ a {
 }
 .articles__height_second {
   height: 512px;
-  margin-left: -58px;
-}
-.articles__height_third {
-  margin-left: -118px;
 }
 .articles__height_fourth {
   height: 551px;
@@ -180,11 +181,9 @@ a {
 .articles__height_fifth {
   height: 512px;
   margin-top: 39px;
-  margin-left: -58px;
 }
 .articles__height_sixth {
   height: 551px;
-  margin-left: -118px;
 }
 .articles__number {
   width: 107px;
@@ -198,4 +197,161 @@ a {
 }
 .articles__name {
   margin-left: 32px;
+}
+.articles__desc {
+  display: none;
+}
+.articles__button {
+  display: none;
+}
+
+.articles:hover {
+  transform: scale(1.15);
+  transition: transform 0.8s;
+}
+
+.footer {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 383.5px);
+    padding-right: calc(50% - 383.5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 343px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  .heading {
+    background-image: url(./imgs/Star__big_mobile.svg), url(./imgs/Star__medium_mobile.svg), url(./imgs/Star__little_mobile.svg), url(./imgs/Starmedium__right_mobile.svg), url(./imgs/Starlittle__right_mobile.svg);
+    background-position: 220px -84px, 37px 97px, 91px 64px, 303px 660px, 272px 640px;
+    height: 730px;
+  }
+  .header {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: center;
+  }
+  .header__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+  }
+  .header__button {
+    display: block;
+    margin: auto;
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    line-height: 141.69%;
+  }
+  .navbar {
+    height: 51px;
+    margin-top: 131px;
+    gap: 88px;
+    background-position: 166px 15px;
+    background-size: 19px 19px;
+  }
+  .navbar__mobile {
+    display: none;
+  }
+  .navbar__item {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  .about {
+    padding-top: 48px;
+    height: 3958px;
+    top: 781px;
+  }
+  .about__header {
+    display: none;
+    color: white;
+  }
+  .about__header_mobile {
+    display: block;
+    margin-left: 16px;
+    margin-bottom: 42px;
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .about__text {
+    display: none;
+  }
+  .games {
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    grid-row-gap: 32px;
+    justify-content: start;
+    justify-items: center;
+    grid-column-gap: 32px;
+  }
+  .games__img {
+    width: 343px;
+  }
+  .articles {
+    gap: 12px;
+    width: 343px;
+    height: 545px;
+  }
+  .articles__height_second {
+    height: 584px;
+  }
+  .articles__height_third {
+    height: 542px;
+  }
+  .articles__height_fourth {
+    height: 622px;
+  }
+  .articles__height_fifth {
+    height: 580px;
+    margin-top: 0px;
+  }
+  .articles__height_sixth {
+    height: 638px;
+  }
+  .articles__number {
+    display: none;
+  }
+  .articles__name {
+    font-size: 32px;
+    padding-top: 18px;
+  }
+  .articles__desc {
+    display: block;
+    margin-left: 32px;
+  }
+  .articles__button {
+    margin-left: 28px;
+    margin-top: 26px;
+    display: block;
+    width: 285px;
+    height: 55px;
+    border-radius: 60px;
+    background-color: black;
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .footer {
+    display: block;
+    width: 376px;
+    height: 100px;
+    background-color: rgb(189, 237, 53);
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 48px;
+    align-content: center;
+  }
 }/*# sourceMappingURL=Style.css.map */
