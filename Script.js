@@ -1,10 +1,12 @@
 let a = 10;
 alert(10);
+a = 20;
+alert(a);
 
-let b = 2007;
+const b = 2007;
 alert(2007);
 
-let c = 'Brendan Eich';
+const c = 'Brendan Eich';
 alert('Brendan Eich');
 
 let d = 10;
@@ -25,12 +27,12 @@ let remainder = f % e;
 alert(remainder);
 
 let g = 1;
-g = g + 5;
-g = g - 3;
-g = g * 7;
-g = g / 3;
-g = g + 1;
-g = g - 1;
+g += 5;
+g -= 3;
+g *= 7;
+g /= 3;
+g += 1;
+g -= 1;
 alert(g);
 
 let age = prompt('Сколько вам лет?');
@@ -39,11 +41,11 @@ alert(age);
 const user = {
 name: 'Vlad',
 age: 30,
-'isAdmin': true
+isAdmin: true,
 };
-console.log(user['isAdmin']);
 alert(user);
 
-let i = prompt('Как тебя зовут?');
-console.log('Привет, ${i}');
-alert('Привет,'), (i);
+let userName = prompt('Как тебя зовут?');
+console.log(`Привет, ${userName}`);
+alert(`Привет, ${userName}!`);
+<script src="./Script.js"></script>
