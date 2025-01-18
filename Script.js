@@ -48,4 +48,3 @@ alert(user);
 let userName = prompt('Как тебя зовут?');
 console.log(`Привет, ${userName}`);
 alert(`Привет, ${userName}!`);
-<script src="./Script.js"></script>
