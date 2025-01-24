@@ -165,8 +165,9 @@ body {
     height: 473px;
     gap: 28px;
     width: 378px;
+    transition: all 0.8s;
     &__height_second {
-    height: 512px;
+      height: 512px;
     }
     &__height_fourth {
       height: 551px;
@@ -195,13 +196,13 @@ body {
       display: none;
     }
     &__button {
-      display: none
+      display: none;
+      text-decoration: none;
     }
   }
   .articles:hover {
     transform: scale(1.15);
-    transition: transform 0.8s;
-  }
+  } 
 
   .mini-games {
     width: 100vw;
@@ -220,7 +221,9 @@ body {
     padding-left: 156px;
     }
     &__articles {
-      display: grid;
+      width: 1200px;
+      height: 500px;
+    display: grid;
     grid-template-columns: repeat(1, 6fr);
     justify-content: start;
     justify-items: center;
@@ -228,13 +231,28 @@ body {
     gap: 32px;
     padding-top: 72px;
     }
+    &__center {
+      width: 1200px;
+      height: 500px;
+      margin-left: 156px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    color: black;
+    background-size: 90%;
+    border-radius: 47px;
+    transition: all 0.8s;
   }
+  }
+  
 
   .mini-articles {
-    width: 1200px;
-    height: 500px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
     align-items: center;
@@ -242,17 +260,20 @@ body {
     color: black;
     background-size: 90%;
     border-radius: 47px;
-    gap: 24px;
+    gap: 36px;
+    transition: all 0.8s;
     &__name {
     padding-top: 42px;
     font-size: 48px;
     font-weight: 700;
     line-height: 59px;
+    padding-left: 48px;
     }
     &__text {
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
+    padding-left: 48px;
     }
     &__button {
     font-family: inherit;
@@ -265,23 +286,21 @@ body {
     font-weight: 600;
     width: 247px;
     height: 66px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 46px;
     }
     &__img {
       height: 500px;
       width: 600px;
     }
   }
+
   .mini-articles__button:hover {
     background-color: #fff;
     color: black;
     cursor: pointer;
   }
-  .mini-articles:hover {
+  .mini-games__center:hover {
     transform: scale(1.1);
-    transition: transform 0.8s;
   }
 
 
