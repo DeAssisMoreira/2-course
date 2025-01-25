@@ -205,13 +205,13 @@ body {
   } 
 
   .mini-games {
-    width: 100vw;
     height: 3500px;
     left: 0;
-    background-image: url(./imgs/Star__little_second.svg), url(./imgs/Star__medium_second.svg);
-    background-position: 1277px 93px, 1320px 126px;
+    background-image: url(./imgs/Star__little_second.svg), url(./imgs/Star__medium_second.svg),
+    url(./imgs/Star__little_second.svg), url(./imgs/Star__medium_second.svg);
+    background-position: 1318px 93px, 1360px 126px, 1312px 3414px, 1360px 3364px;
     background-repeat: no-repeat;
-    background: rgb(32, 32, 39);
+    background-color: rgb(32, 32, 39);
     color: white;
     padding-top: 50px;
     &__header {
@@ -221,8 +221,6 @@ body {
     padding-left: 156px;
     }
     &__articles {
-      width: 1200px;
-      height: 500px;
     display: grid;
     grid-template-columns: repeat(1, 6fr);
     justify-content: start;
@@ -232,13 +230,10 @@ body {
     padding-top: 72px;
     }
     &__center {
-      width: 1200px;
-      height: 500px;
-      margin-left: 156px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-content: flex-start;
+    align-content: center;
     justify-content: space-between;
     align-items: flex-start;
     background-color: #fff;
@@ -290,7 +285,9 @@ body {
     }
     &__img {
       height: 500px;
-      width: 600px;
+    }
+    &__img_four {
+      border-radius: 8.5%;
     }
   }
 
