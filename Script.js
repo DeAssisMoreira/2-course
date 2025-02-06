@@ -1,9 +1,60 @@
 
-/* Задание 1
+/* Домашка 3, задание 1 */
+
+for (let i = 0; i < 2; i++) {
+    console.log('Hello');
+}
+
+/* Задание 2 */
+
+for (let i = 1; i <=5; i++) {
+    console.log(i);
+}
+
+/* Задание 3 */
+
+for (let i = 7; i <=22; i++) {
+    console.log(i);
+}
+
+/* Задание 4 */
+
+const obj = {
+    kolya: '200',
+    vasya: '300',
+    petya: '400'
+}
+
+for (const key in obj) {
+    console.log(`${key} - ${obj[key]} долларов`);
+}
+
+/* Задание 5 */
+
+let n = 1000;
+let num = 0;
+while (n >= 50) {
+    n /= 2;
+    num++;
+}
+console.log(n);
+console.log(num);
+
+/* Задание 6 */
+
+let friday = 2;
+let days = 31;
+for (let f = friday; f < days; f += 7) {
+    console.log(`Сегодня пятница, ${f}-е число. Необходимо подготовить отчет.`);
+}
+
+
+
+/* Домашка 2, Задание 1
 
 let password = 'qwerty';
 let pass = prompt('Введите пароль');
-alert(pass = password ? "Верно" : "Ошибка"); */
+alert(pass = password ? "Верно" : "Ошибка"); 
 
 
 
@@ -15,7 +66,7 @@ alert('Верно');
 alert('Ошибка');
 }
 
-/* Задание 2 */
+/* Задание 2 
 
 let c = 4
 if (c > 0 && c < 10) {
@@ -24,7 +75,7 @@ if (c > 0 && c < 10) {
     alert('Неверно');
 }
 
-/* Задание 3 */
+/* Задание 3 
 
 let d = 78;
 let e = 178;
@@ -34,13 +85,13 @@ if (e >= 100 || d >=100) {
     alert('Неверно');
 }
     
-/* Задание 4 */
+/* Задание 4 
 
 let a = '2';
 let b = '3';
 alert(Number(a) + Number(b));
 
-/* Задание 5 */
+/* Задание 5 
 
 let monthNumber = 12;
 switch (monthNumber) {
@@ -83,12 +134,13 @@ switch (monthNumber) {
     default:
         alert('Неверно');
         break;
-} 
+} */
 
 
 
 
-/*let a = 10;
+/* Домашка 1
+let a = 10;
 alert(10);
 a = 20;
 alert(a);
@@ -131,12 +183,12 @@ alert(age);
 const user = {
 name: 'Vlad',
 age: 30,
-isAdmin: true,
+isAdmin: true
 };
 alert(user);
 
 let userName = prompt('Как тебя зовут?');
-console.log(`Привет, ${userName}`);
-alert(`Привет, ${userName}!`);
+console.log(`Привет, ${name}`);
+alert(`Привет, ${name}!`);
 <script src="./Script.js"></script> */
 
