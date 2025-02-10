@@ -330,7 +330,7 @@ a {
   .heading {
     background-image: url(./imgs/Star__big_mobile.svg), url(./imgs/Star__medium_mobile.svg), url(./imgs/Star__little_mobile.svg), url(./imgs/Starmedium__right_mobile.svg), url(./imgs/Starlittle__right_mobile.svg);
     background-position: 220px -84px, 37px 97px, 91px 64px, 303px 660px, 272px 640px;
-    height: 780px;
+    height: 800px;
   }
   .header {
     font-size: 40px;
@@ -354,14 +354,12 @@ a {
     font-weight: 400;
     line-height: 20px;
     text-align: center;
-    height: 188px;
   }
   .header__button {
     display: block;
     margin: auto;
-    margin-top: 6px;
     width: 285px;
-    height: 102px;
+    height: 162px;
     font-size: 16px;
     line-height: 141.69%;
     display: flex;
@@ -369,11 +367,11 @@ a {
     align-items: center;
   }
   .navbar {
-    height: 98px;
-    width: 376px;
+    height: 112px;
+    width: 375px;
     margin-top: 210px;
     gap: 88px;
-    background-position: 166px 17px;
+    background-position: 166px 12px;
     background-size: 19px 19px;
   }
   .navbar__mobile {
@@ -385,7 +383,7 @@ a {
   }
   .about {
     padding-top: 48px;
-    height: 3900px;
+    height: 3948px;
     top: 781px;
   }
   .about__header {
@@ -479,7 +477,7 @@ a {
   }
   .footer {
     display: block;
-    width: 376px;
+    width: 375px;
     height: 100px;
     background-color: rgb(189, 237, 53);
     color: black;

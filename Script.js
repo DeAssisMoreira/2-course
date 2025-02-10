@@ -1,23 +1,151 @@
 
-/* Домашка 3, задание 1 */
+/* Домашка 4, Игра Угадай число 
+
+function gameOne() {
+    let answer = prompt('Угадай число от 1 до 100');
+    if (answer > 47) {
+        alert('Ваше число больше');
+    }
+    else if (answer === 47) {
+        alert('Вы угадали');
+    } 
+    else {
+        alert('Ваше число меньше');
+    }
+}
+
+/* Задание 1 
+
+function less(a, b) {
+    if (a < b) {
+        return a;
+    } 
+    else {
+        return b;
+    }
+}
+    alert(less(8, 4));
+    alert(less(6, 6)); 
+    */
+
+/* Задание 2 
+
+function even(number) {
+    if (number % 2 === 0) {
+        return('Число четное');
+    }
+    else {
+        return('Число нечетное');
+    }
+}
+alert(even(4));
+alert(even(5));
+*/
+
+/* Задание 3 
+
+function square(number) {
+    alert(number ** 2);
+}
+square(5);
+
+const squareTwo = (num) => num ** 2;
+alert(squareTwo(6));
+*/
+
+/* Задание 4 
+
+function age() {
+    let age = prompt('Сколько тебе лет?');
+
+if (age < 0) {
+        alert('Возраст введен неправильно');
+    }
+else if (age >= 0 && age <= 12) {
+    alert('Привет, друг!');
+} 
+else if (age >= 13) {
+    alert('Добро пожаловать!');
+}
+else {
+    alert('Вы ввели неправильное значение');
+}
+}
+age();
+*/
+
+
+/* Задание 5 
+
+function nums(a, b) {
+    if (isNaN(a) || isNaN(b)) {
+        alert('Одно или оба значения не являются числом');
+    } else {
+        alert(a * b);
+    }
+}
+nums(4, 6);
+*/
+
+/* Задание 6 
+
+function enterNumber() {
+    let answer = prompt('Введите число');
+    if (isNaN(answer)) {
+        alert('Переданный параметр не является числом');
+    } else {
+        alert(`${answer} в кубе равняется ${answer ** 3}`)
+    }
+}
+enterNumber();
+*/
+
+/* Задание 7 
+
+function getArea() {
+    return Math.PI * this.radius ** 2;
+}
+
+function getPerimeter() {
+    return 2 * Math.PI * this.radius;
+}
+
+const circle1 = {
+    radius: 10,
+    methodGetArea: getArea,
+    methodGetPerimeter: getPerimeter,
+}
+
+const circle2 = {
+    radius: 20,
+    methodGetArea: getArea,
+    methodGetPerimeter: getPerimeter,
+}
+
+alert(circle1.methodGetArea());
+alert(circle2.methodGetArea());
+*/
+
+
+/* Домашка 3, задание 1 
 
 for (let i = 0; i < 2; i++) {
     console.log('Hello');
 }
 
-/* Задание 2 */
+/* Задание 2 
 
 for (let i = 1; i <=5; i++) {
     console.log(i);
 }
 
-/* Задание 3 */
+/* Задание 3 
 
 for (let i = 7; i <=22; i++) {
     console.log(i);
 }
 
-/* Задание 4 */
+/* Задание 4 
 
 const obj = {
     kolya: '200',
@@ -29,7 +157,7 @@ for (const key in obj) {
     console.log(`${key} - ${obj[key]} долларов`);
 }
 
-/* Задание 5 */
+/* Задание 5 
 
 let n = 1000;
 let num = 0;
@@ -40,14 +168,14 @@ while (n >= 50) {
 console.log(n);
 console.log(num);
 
-/* Задание 6 */
+/* Задание 6 
 
 let friday = 2;
 let days = 31;
 for (let f = friday; f < days; f += 7) {
     console.log(`Сегодня пятница, ${f}-е число. Необходимо подготовить отчет.`);
 }
-
+*/
 
 
 /* Домашка 2, Задание 1
