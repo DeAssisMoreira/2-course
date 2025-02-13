@@ -73,7 +73,6 @@ body {
   .navbar {
     background-color: rgb(188, 236, 48);
     backdrop-filter: blur(50px);
-    width: 3220px;
     left: 0;
     height: 90px;
     margin-top: auto;
@@ -82,9 +81,10 @@ body {
     flex-direction: row;
     align-items: center;
     background-image: url(./imgs/Star__navbar.svg), url(./imgs/Star__navbar.svg), url(./imgs/Star__navbar.svg);
-    background-position: 272px 27px, 660px 27px, 1100px 27px;
+    background-position: 284px 27px, 696px 27px, 1156px 27px;
     background-repeat: no-repeat;
-    gap: 128px;
+    gap: 152px;
+    white-space: nowrap;
     &__item {
     font-size: 30px;
     font-weight: 700;
