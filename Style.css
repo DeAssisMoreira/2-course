@@ -16,6 +16,7 @@ body {
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
+  margin-bottom: 156px;
 }
 
 .heading {
@@ -23,7 +24,6 @@ body {
   background-image: url(./imgs/Header_star.svg), url(./imgs/Header__star_medium.svg), url(./imgs/Header__star_little.svg), url(./imgs/Star__little_right.svg), url(./imgs/Star__medium_right.svg);
   background-position: 928px -333px, 63px 94px, 156px 69px, 948px 538px, 1013px 588px;
   background-repeat: no-repeat;
-  height: 800px;
   display: flex;
   flex-direction: column;
 }
@@ -110,7 +110,6 @@ body {
   padding-right: calc(50% - 600px);
   padding-top: 94px;
   width: 100%;
-  height: 1470px;
   background: rgb(32, 32, 39);
   background-repeat: no-repeat;
   color: white;
@@ -137,16 +136,17 @@ body {
 
 .games {
   display: grid;
-  grid-template-columns: repeat(3, 4fr);
+  grid-template-columns: repeat(12, 1fr);
   justify-content: start;
   justify-items: center;
-  grid-column-gap: 32px;
-}
-.games__img {
-  width: 378px;
+  grid-column-gap: 36px;
+  grid-row-gap: 36px;
 }
 .games__img_fourth {
   border-radius: 8.5%;
+}
+.games__img_fifth {
+  margin-top: -32px;
 }
 .games__link {
   text-decoration: none;
@@ -156,18 +156,45 @@ a {
   text-decoration: none;
 }
 
-.articles__height_second {
-  height: 512px;
+.articles {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #fff;
+  color: black;
+  background-size: 90%;
+  border-radius: 30px;
+  background-repeat: repeat-x;
+  gap: 36px;
+  transition: all 0.8s;
 }
-.articles__height_fourth {
-  height: 551px;
+.articles__mobile {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #fff;
+  color: black;
+  background-size: 90%;
+  border-radius: 30px;
+  background-repeat: repeat-x;
+  gap: 36px;
+  transition: all 0.8s;
+}
+.articles__mobile img {
+  width: 100%;
+}
+.articles__height_second {
+  margin-bottom: -32px;
 }
 .articles__height_fifth {
-  height: 512px;
-  margin-top: 42px;
-}
-.articles__height_sixth {
-  height: 551px;
+  margin-top: 32px;
+  padding-top: 32px;
 }
 .articles__number {
   width: 107px;
@@ -182,6 +209,7 @@ a {
 .articles__name {
   padding-left: 32px;
   padding-top: 16px;
+  padding-bottom: 16px;
 }
 .articles__desc {
   display: none;
@@ -192,18 +220,18 @@ a {
 }
 
 .articles:hover {
-  transform: scale(1.15);
+  transform: scale(1.13);
 }
 
 .mini-games {
-  height: 3500px;
   left: 0;
   background-image: url(./imgs/Star__little_second.svg), url(./imgs/Star__medium_second.svg), url(./imgs/Star__little_second.svg), url(./imgs/Star__medium_second.svg);
   background-position: 1318px 93px, 1360px 126px, 1312px 3414px, 1360px 3364px;
   background-repeat: no-repeat;
   background-color: rgb(32, 32, 39);
   color: white;
-  padding-top: 50px;
+  padding-top: 96px;
+  padding-bottom: 36px;
 }
 .mini-games__header {
   font-size: 64px;
@@ -298,6 +326,7 @@ a {
   line-height: 20px;
   text-align: center;
   align-content: center;
+  margin-top: -158px;
 }
 
 @media (max-width: 767px) {
@@ -316,16 +345,12 @@ a {
   .heading {
     background-image: url(./imgs/Star__big_mobile.svg), url(./imgs/Star__medium_mobile.svg), url(./imgs/Star__little_mobile.svg), url(./imgs/Starmedium__right_mobile.svg), url(./imgs/Starlittle__right_mobile.svg);
     background-position: 220px -84px, 37px 97px, 91px 64px, 303px 660px, 272px 640px;
-    height: 800px;
   }
   .header {
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
     text-align: center;
-    margin-top: 147px;
-    margin-bottom: 18px;
-    height: 298px;
   }
   .header__text {
     font-size: 16px;
@@ -340,13 +365,12 @@ a {
     font-weight: 400;
     line-height: 20px;
     text-align: center;
-    padding-top: 28px;
   }
   .header__button {
     display: block;
     margin: auto;
     width: 285px;
-    height: 85px;
+    height: 65px;
     font-size: 16px;
     line-height: 141.69%;
     display: flex;
@@ -354,11 +378,9 @@ a {
     align-items: center;
   }
   .navbar {
-    height: 100px;
-    width: 375px;
-    margin-top: 210px;
+    height: 51px;
     gap: 88px;
-    background-position: 166px 20px;
+    background-position: 166px 16px;
     background-size: 19px 19px;
   }
   .navbar__mobile {
@@ -370,8 +392,6 @@ a {
   }
   .about {
     padding-top: 48px;
-    height: 3948px;
-    top: 781px;
   }
   .about__header {
     display: none;
@@ -389,36 +409,48 @@ a {
   }
   .games {
     display: grid;
-    grid-template-columns: repeat(1, 4fr);
-    grid-row-gap: 32px;
+    grid-template-columns: repeat(1, 3fr);
+    grid-row-gap: 16px;
     justify-content: start;
     justify-items: center;
-    grid-column-gap: 32px;
-  }
-  .games__img {
-    width: 343px;
+    grid-column-gap: 16px;
+    padding-bottom: 48px;
   }
   .articles {
     display: flex;
     align-items: center;
     gap: 12px;
-    width: 343px;
-    height: 545px;
+  }
+  .articles__height_first {
+    height: 544px;
+    width: 345px;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
   .articles__height_second {
     height: 584px;
+    width: 345px;
+    margin-bottom: 16px;
   }
   .articles__height_third {
     height: 584px;
+    width: 345px;
+    margin-bottom: 12px;
   }
   .articles__height_fourth {
     height: 622px;
+    width: 345px;
   }
   .articles__height_fifth {
     height: 580px;
+    width: 345px;
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
   .articles__height_sixth {
     height: 638px;
+    width: 345px;
+    margin-bottom: 32px;
   }
   .articles__number {
     display: none;
@@ -448,13 +480,15 @@ a {
   }
   .articles__mobile {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .mobile {
     display: flex;
     flex-direction: column;
+  }
+  .mobile__second {
+    margin-left: 32px;
   }
   .mini-games {
     display: none;
@@ -473,5 +507,6 @@ a {
     line-height: 20px;
     text-align: center;
     align-content: center;
+    margin-top: 0px;
   }
 }/*# sourceMappingURL=Style.css.map */
