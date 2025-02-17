@@ -86,6 +86,7 @@ body {
   background-repeat: no-repeat;
   gap: 152px;
   white-space: nowrap;
+  overflow: hidden;
 }
 .navbar__item {
   font-size: 30px;
@@ -155,21 +156,6 @@ a {
   text-decoration: none;
 }
 
-.articles {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #fff;
-  color: black;
-  background-size: 90%;
-  border-radius: 30px;
-  background-repeat: repeat-x;
-  height: 473px;
-  gap: 28px;
-  width: 378px;
-  transition: all 0.8s;
-}
 .articles__height_second {
   height: 512px;
 }
