@@ -142,11 +142,12 @@ body {
   grid-column-gap: 36px;
   grid-row-gap: 36px;
 }
-.games__img_fourth {
+.games__img {
   border-radius: 8.5%;
 }
 .games__img_fifth {
   margin-top: -32px;
+  border-radius: 8.5%;
 }
 .games__link {
   text-decoration: none;
@@ -302,8 +303,6 @@ a {
 }
 .mini-articles__img {
   height: 500px;
-}
-.mini-articles__img_four {
   border-radius: 47px;
 }
 
@@ -508,5 +507,19 @@ a {
     text-align: center;
     align-content: center;
     margin-top: 0px;
+  }
+}
+@media (max-width: 978px) and (min-width: 767px) {
+  .center {
+    padding-left: calc(50% - 489px);
+    padding-right: calc(50% - 489px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
   }
 }/*# sourceMappingURL=Style.css.map */

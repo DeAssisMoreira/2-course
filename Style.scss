@@ -144,11 +144,12 @@ body {
   justify-items: center;
   grid-column-gap: 36px;
   grid-row-gap: 36px;
-  &__img_fourth {
+  &__img {
     border-radius: 8.5%;
   }
   &__img_fifth {
     margin-top: -32px;
+    border-radius: 8.5%;
   }
   &__link {
     text-decoration: none;
@@ -305,8 +306,6 @@ a {
   }
   &__img {
     height: 500px;
-  }
-  &__img_four {
     border-radius: 47px;
   }
 }
