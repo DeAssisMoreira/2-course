@@ -1,5 +1,304 @@
+/* Домашка 6. Игра 2 */
 
-/* Домашка 4, Игра Угадай число 
+/* Вариант 1 */
+
+/* function sum() {
+    let answer = prompt('сложи 24 и 47');
+    if (answer == 71) {
+        alert('Верно!');
+    }
+    else {
+        alert('Неверно');
+    }
+    }
+sum();
+
+function sub() {
+    let answer = prompt('вычти 31 от 71');
+    alert(answer == 40 ? "Верно!" : "Неверно");
+}
+sub();
+
+function mult() {
+    let answer = prompt('Умножь 40 на 3');
+    alert(answer == 120 ? "Верно!" : "Неверно");
+}
+mult();
+
+function div() {
+    let answer = prompt('Раздели 120 на 12');
+    alert(answer == 10 ? "Верно!" : "Неверно");
+}
+div(); */
+
+
+/* Вариант 2 */
+
+ /* function randNums() {
+    const operators = ["+", "-", "*", "/"];
+    let operator = operators[Math.floor(Math.random() * operators.length)];
+
+    let a = (Math.floor(Math.random()) * 10 + 1);
+    let b = (Math.floor(Math.random()) * 10 + 1);
+
+    if (operator === '+') {
+        task = `Сложите ${a} и ${b}`;
+    } 
+    else if (operator === '-') {
+        task = `Вычтите ${a} от ${b}`;
+    }
+    else if (operator === '*') {
+        task = `Умножьте ${a} на ${b}`;
+    }
+    else {
+        task = `Разделите ${a} на ${b}`;
+    }
+    return [num1, num2];
+}
+    randNums();
+    
+    function answer(operator, a, b) {
+    userAnswer = +prompt(Number(task));
+    correctAnswer = calculateUserAnswer(operator, a, b);
+    if (userAnswer === calculateUserAnswer) {
+        alert('Верно');
+    }
+    else {
+        alert('Неверно');
+    }
+    }
+answer();
+
+function correctAnswer(operator, a, b) {
+    switch(operator) {
+        case '+':
+        return a + b;
+        case '-':
+        return a - b;
+        case '*':
+        return a * b;
+        case '/':
+        return a / b;
+    }
+}
+correctAnswer(); */
+ 
+/* Вариант 3 */
+
+function randNums() {
+    const operators = ["+", "-", "*", "/"];
+    const operator = operators[Math.floor(Math.random() * operators.length)];
+    let a, b, result;  
+
+    switch(operator) {
+        case '+':
+            a = Math.floor(Math.random() * 10) + 1;
+            b = Math.floor(Math.random() * 10) + 1;
+            task = prompt(`Сложите ${a} и ${b}`);
+            result = a + b;
+            break;
+
+            case '-':
+            a = Math.floor(Math.random() * 10) + 1;
+            b = Math.floor(Math.random() * 10) + 1;
+            task = prompt(`Вычтите ${b} от ${a}`);
+            result = a - b;
+            break;
+
+            case '*':
+            a = Math.floor(Math.random() * 10) + 1;
+            b = Math.floor(Math.random() * 10) + 1;
+            task = prompt(`Умножьте ${a} на ${b}`);
+            result = a * b;
+            break;
+
+            case '/':
+            a = Math.floor(Math.random() * 10) + 1;
+            b = Math.floor(Math.random() * 10) + 1;
+            task = prompt(`Разделите ${b} на ${a}`);
+            result = a / b;
+            break;
+    }
+}
+randNums();
+
+    function checkAnswer(correctAnswer) {
+        let userAnswer = task(operator, a, b);
+        if (userAnswer === correctAnswer) {
+            alert('Верно');
+        }
+        else {
+            alert('Неверно');
+        }
+    }
+checkAnswer();
+
+
+
+
+
+
+
+/* Задание 1 */
+/*
+const arr = [1, 5, 4, 10, 0, 3];
+for (let i = 0; i < arr.length; i++) {
+console.log(arr[i]); 
+if (arr[i] === 10) {
+    break;
+}
+} */
+
+/* Задание 2 */
+
+/* const arr = [1, 5, 4, 10, 0, 3];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 4) {
+        console.log(i);
+        break;
+}
+} */
+
+/* Задание 3 */
+
+/* const arr = [1, 3, 5, 10, 20];
+console.log(arr.join(' ')); */
+
+/* Задание 4 */
+
+/* const arr = [];
+
+for (let i = 0; i < 3; i++) {
+    const arr2 = [];
+    for (let i = 0; i < 3; i++) {
+        arr2.push(1);
+    }
+    arr.push(arr2);
+}
+console.log(arr); */
+
+/* Задание 5 */
+
+/* const arr = [1, 1, 1];
+arr.push(2, 2, 2);
+console.log(arr); */
+
+/* Задание 6 */
+
+/* const arr = [9, 8, 7, 'a', 6, 5];
+arr.sort();
+console.log(arr);
+const onlyNums = arr.filter((letter) => letter !== 'a');
+console.log(onlyNums); */
+
+/* Задание 7 */
+
+ /* const guess = [9, 8, 7, 6, 5];
+ let answer = +prompt('Угадай число');
+if (guess.includes(answer)) {
+    alert('Угадал');
+}
+else {
+    alert('Не угадал');
+} */
+
+/* Задание 8 */
+
+/* let alph = 'abcdef';
+alph = alph.split('');
+alph.reverse();
+alph = alph.join('');
+console.log(alph); */
+
+/* Задание 9 */
+
+/* const arr = [[1, 2, 3], [4, 5, 6]];
+const newArr = [];
+for (let i = 0; i < arr.length; i++) {
+    newArr.push(...arr[i]);
+}
+console.log(newArr); */
+
+/* Задание 10 */
+
+/* const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i + 1]) {
+    console.log(arr[i] + arr[i + 1]);
+    }
+} */
+
+/* Задание 11 */
+
+/* const arr = [3, 4, 5];
+const arrSquare = arr.map(arr => arr ** 2);
+console.log(arrSquare); */
+
+/* Задание 12 */
+
+/* const arr = [one, two, three];
+const length = arr.map(arr => arr.length);
+console.log(arr(['one', 'two', 'three'])); */
+
+/* function length(arr) {
+    return arr.map(item => item.length);
+}
+console.log(length(['one', 'three'])); */
+
+/* Задание 13 */
+
+/* function nums(arr) {
+    return arr.filter(item => item < 0);
+}
+console.log(nums([4, -6, 7, -8])); */
+
+/* Задание 14 */
+
+/* function random() {
+    return Math.floor(Math.random() * 10);
+}
+    const arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr.push(random());
+    }
+    const even = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            even.push(arr[i]);
+        } 
+    }
+console.log(even); */
+
+/* Задание 15 */
+
+/* function middle() {
+    return Math.floor(Math.random() * 10);
+}
+const arr = [];
+for (let i = 0; i < 6; i++) {
+    arr.push(middle());
+}
+console.log(arr);
+console.log(arr.reduce((a, b) => a + b) / arr.length); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Домашка 5, Игра Угадай число 
 
 function gameOne() {
     let answer = prompt('Угадай число от 1 до 100');
@@ -127,7 +426,7 @@ alert(circle2.methodGetArea());
 */
 
 
-/* Домашка 3, задание 1 
+/* Домашка 4, задание 1 
 
 for (let i = 0; i < 2; i++) {
     console.log('Hello');
@@ -178,7 +477,7 @@ for (let f = friday; f < days; f += 7) {
 */
 
 
-/* Домашка 2, Задание 1
+/* Домашка 3, Задание 1
 
 let password = 'qwerty';
 let pass = prompt('Введите пароль');
@@ -267,7 +566,7 @@ switch (monthNumber) {
 
 
 
-/* Домашка 1
+/* Домашка 2
 let a = 10;
 alert(10);
 a = 20;
